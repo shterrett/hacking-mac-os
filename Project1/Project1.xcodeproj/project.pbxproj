@@ -1,0 +1,366 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17850DAB1DE71CD1000E458A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17850DAA1DE71CD1000E458A /* AppDelegate.swift */; };
+		17850DAD1DE71CD1000E458A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17850DAC1DE71CD1000E458A /* ViewController.swift */; };
+		17850DAF1DE71CD1000E458A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17850DAE1DE71CD1000E458A /* Assets.xcassets */; };
+		17850DB21DE71CD2000E458A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17850DB01DE71CD2000E458A /* Main.storyboard */; };
+		17D6B26F1DE71E560090A802 /* ceres.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 17D6B2611DE71E560090A802 /* ceres.pdf */; };
+		17D6B2701DE71E560090A802 /* earth.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 17D6B2621DE71E560090A802 /* earth.pdf */; };
+		17D6B2711DE71E560090A802 /* enceladus.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 17D6B2631DE71E560090A802 /* enceladus.pdf */; };
+		17D6B2721DE71E560090A802 /* europa.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 17D6B2641DE71E560090A802 /* europa.pdf */; };
+		17D6B2731DE71E560090A802 /* Final_Peg_51_Poster_print_tiff.tif in Resources */ = {isa = PBXBuildFile; fileRef = 17D6B2651DE71E560090A802 /* Final_Peg_51_Poster_print_tiff.tif */; };
+		17D6B2741DE71E560090A802 /* grand_tour.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 17D6B2661DE71E560090A802 /* grand_tour.pdf */; };
+		17D6B2751DE71E560090A802 /* HD_40307g_39x27.tif in Resources */ = {isa = PBXBuildFile; fileRef = 17D6B2671DE71E560090A802 /* HD_40307g_39x27.tif */; };
+		17D6B2761DE71E560090A802 /* jupiter.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 17D6B2681DE71E560090A802 /* jupiter.pdf */; };
+		17D6B2771DE71E560090A802 /* Kepler_16b_39x27.tif in Resources */ = {isa = PBXBuildFile; fileRef = 17D6B2691DE71E560090A802 /* Kepler_16b_39x27.tif */; };
+		17D6B2781DE71E560090A802 /* Kepler_186f_39x27.tif in Resources */ = {isa = PBXBuildFile; fileRef = 17D6B26A1DE71E560090A802 /* Kepler_186f_39x27.tif */; };
+		17D6B2791DE71E560090A802 /* mars.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 17D6B26B1DE71E560090A802 /* mars.pdf */; };
+		17D6B27A1DE71E560090A802 /* PSOJ318.5-22_print.tif in Resources */ = {isa = PBXBuildFile; fileRef = 17D6B26C1DE71E560090A802 /* PSOJ318.5-22_print.tif */; };
+		17D6B27B1DE71E560090A802 /* titan.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 17D6B26D1DE71E560090A802 /* titan.pdf */; };
+		17D6B27C1DE71E560090A802 /* venus.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 17D6B26E1DE71E560090A802 /* venus.pdf */; };
+		17D6B27E1DE721E40090A802 /* SourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6B27D1DE721E40090A802 /* SourceViewController.swift */; };
+		17D6B2801DE7222F0090A802 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6B27F1DE7222F0090A802 /* DetailViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		17850DA71DE71CD1000E458A /* Project1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		17850DAA1DE71CD1000E458A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		17850DAC1DE71CD1000E458A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		17850DAE1DE71CD1000E458A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		17850DB11DE71CD2000E458A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		17850DB31DE71CD2000E458A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17D6B2611DE71E560090A802 /* ceres.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ceres.pdf; sourceTree = "<group>"; };
+		17D6B2621DE71E560090A802 /* earth.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = earth.pdf; sourceTree = "<group>"; };
+		17D6B2631DE71E560090A802 /* enceladus.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = enceladus.pdf; sourceTree = "<group>"; };
+		17D6B2641DE71E560090A802 /* europa.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = europa.pdf; sourceTree = "<group>"; };
+		17D6B2651DE71E560090A802 /* Final_Peg_51_Poster_print_tiff.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Final_Peg_51_Poster_print_tiff.tif; sourceTree = "<group>"; };
+		17D6B2661DE71E560090A802 /* grand_tour.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = grand_tour.pdf; sourceTree = "<group>"; };
+		17D6B2671DE71E560090A802 /* HD_40307g_39x27.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = HD_40307g_39x27.tif; sourceTree = "<group>"; };
+		17D6B2681DE71E560090A802 /* jupiter.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = jupiter.pdf; sourceTree = "<group>"; };
+		17D6B2691DE71E560090A802 /* Kepler_16b_39x27.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Kepler_16b_39x27.tif; sourceTree = "<group>"; };
+		17D6B26A1DE71E560090A802 /* Kepler_186f_39x27.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Kepler_186f_39x27.tif; sourceTree = "<group>"; };
+		17D6B26B1DE71E560090A802 /* mars.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = mars.pdf; sourceTree = "<group>"; };
+		17D6B26C1DE71E560090A802 /* PSOJ318.5-22_print.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "PSOJ318.5-22_print.tif"; sourceTree = "<group>"; };
+		17D6B26D1DE71E560090A802 /* titan.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = titan.pdf; sourceTree = "<group>"; };
+		17D6B26E1DE71E560090A802 /* venus.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = venus.pdf; sourceTree = "<group>"; };
+		17D6B27D1DE721E40090A802 /* SourceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceViewController.swift; sourceTree = "<group>"; };
+		17D6B27F1DE7222F0090A802 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17850DA41DE71CD1000E458A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17850D9E1DE71CD1000E458A = {
+			isa = PBXGroup;
+			children = (
+				17850DA91DE71CD1000E458A /* Project1 */,
+				17850DA81DE71CD1000E458A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		17850DA81DE71CD1000E458A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17850DA71DE71CD1000E458A /* Project1.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17850DA91DE71CD1000E458A /* Project1 */ = {
+			isa = PBXGroup;
+			children = (
+				17850DAA1DE71CD1000E458A /* AppDelegate.swift */,
+				17850DAC1DE71CD1000E458A /* ViewController.swift */,
+				17850DAE1DE71CD1000E458A /* Assets.xcassets */,
+				17850DB01DE71CD2000E458A /* Main.storyboard */,
+				17D6B27D1DE721E40090A802 /* SourceViewController.swift */,
+				17D6B27F1DE7222F0090A802 /* DetailViewController.swift */,
+				17850DB31DE71CD2000E458A /* Info.plist */,
+				17D6B2601DE71E560090A802 /* Content */,
+			);
+			path = Project1;
+			sourceTree = "<group>";
+		};
+		17D6B2601DE71E560090A802 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				17D6B2611DE71E560090A802 /* ceres.pdf */,
+				17D6B2621DE71E560090A802 /* earth.pdf */,
+				17D6B2631DE71E560090A802 /* enceladus.pdf */,
+				17D6B2641DE71E560090A802 /* europa.pdf */,
+				17D6B2651DE71E560090A802 /* Final_Peg_51_Poster_print_tiff.tif */,
+				17D6B2661DE71E560090A802 /* grand_tour.pdf */,
+				17D6B2671DE71E560090A802 /* HD_40307g_39x27.tif */,
+				17D6B2681DE71E560090A802 /* jupiter.pdf */,
+				17D6B2691DE71E560090A802 /* Kepler_16b_39x27.tif */,
+				17D6B26A1DE71E560090A802 /* Kepler_186f_39x27.tif */,
+				17D6B26B1DE71E560090A802 /* mars.pdf */,
+				17D6B26C1DE71E560090A802 /* PSOJ318.5-22_print.tif */,
+				17D6B26D1DE71E560090A802 /* titan.pdf */,
+				17D6B26E1DE71E560090A802 /* venus.pdf */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17850DA61DE71CD1000E458A /* Project1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17850DB61DE71CD2000E458A /* Build configuration list for PBXNativeTarget "Project1" */;
+			buildPhases = (
+				17850DA31DE71CD1000E458A /* Sources */,
+				17850DA41DE71CD1000E458A /* Frameworks */,
+				17850DA51DE71CD1000E458A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Project1;
+			productName = Project1;
+			productReference = 17850DA71DE71CD1000E458A /* Project1.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		17850D9F1DE71CD1000E458A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Stuart Terrett";
+				TargetAttributes = {
+					17850DA61DE71CD1000E458A = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 17850DA21DE71CD1000E458A /* Build configuration list for PBXProject "Project1" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 17850D9E1DE71CD1000E458A;
+			productRefGroup = 17850DA81DE71CD1000E458A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17850DA61DE71CD1000E458A /* Project1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17850DA51DE71CD1000E458A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17D6B26F1DE71E560090A802 /* ceres.pdf in Resources */,
+				17D6B27A1DE71E560090A802 /* PSOJ318.5-22_print.tif in Resources */,
+				17D6B27C1DE71E560090A802 /* venus.pdf in Resources */,
+				17D6B2701DE71E560090A802 /* earth.pdf in Resources */,
+				17D6B2721DE71E560090A802 /* europa.pdf in Resources */,
+				17D6B2741DE71E560090A802 /* grand_tour.pdf in Resources */,
+				17D6B2791DE71E560090A802 /* mars.pdf in Resources */,
+				17D6B2761DE71E560090A802 /* jupiter.pdf in Resources */,
+				17D6B2781DE71E560090A802 /* Kepler_186f_39x27.tif in Resources */,
+				17D6B27B1DE71E560090A802 /* titan.pdf in Resources */,
+				17D6B2771DE71E560090A802 /* Kepler_16b_39x27.tif in Resources */,
+				17850DAF1DE71CD1000E458A /* Assets.xcassets in Resources */,
+				17D6B2731DE71E560090A802 /* Final_Peg_51_Poster_print_tiff.tif in Resources */,
+				17D6B2711DE71E560090A802 /* enceladus.pdf in Resources */,
+				17850DB21DE71CD2000E458A /* Main.storyboard in Resources */,
+				17D6B2751DE71E560090A802 /* HD_40307g_39x27.tif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17850DA31DE71CD1000E458A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17850DAD1DE71CD1000E458A /* ViewController.swift in Sources */,
+				17850DAB1DE71CD1000E458A /* AppDelegate.swift in Sources */,
+				17D6B27E1DE721E40090A802 /* SourceViewController.swift in Sources */,
+				17D6B2801DE7222F0090A802 /* DetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		17850DB01DE71CD2000E458A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17850DB11DE71CD2000E458A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		17850DB41DE71CD2000E458A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		17850DB51DE71CD2000E458A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		17850DB71DE71CD2000E458A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Project1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stuart.Project1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		17850DB81DE71CD2000E458A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Project1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stuart.Project1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17850DA21DE71CD1000E458A /* Build configuration list for PBXProject "Project1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17850DB41DE71CD2000E458A /* Debug */,
+				17850DB51DE71CD2000E458A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17850DB61DE71CD2000E458A /* Build configuration list for PBXNativeTarget "Project1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17850DB71DE71CD2000E458A /* Debug */,
+				17850DB81DE71CD2000E458A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 17850D9F1DE71CD1000E458A /* Project object */;
+}
