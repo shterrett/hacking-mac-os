@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17790BD31DEBB51100C45D45 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17790BD21DEBB51100C45D45 /* WindowController.swift */; };
 		17850DAB1DE71CD1000E458A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17850DAA1DE71CD1000E458A /* AppDelegate.swift */; };
 		17850DAD1DE71CD1000E458A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17850DAC1DE71CD1000E458A /* ViewController.swift */; };
 		17850DAF1DE71CD1000E458A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17850DAE1DE71CD1000E458A /* Assets.xcassets */; };
@@ -15,14 +16,9 @@
 		17D6B2701DE71E560090A802 /* earth.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 17D6B2621DE71E560090A802 /* earth.pdf */; };
 		17D6B2711DE71E560090A802 /* enceladus.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 17D6B2631DE71E560090A802 /* enceladus.pdf */; };
 		17D6B2721DE71E560090A802 /* europa.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 17D6B2641DE71E560090A802 /* europa.pdf */; };
-		17D6B2731DE71E560090A802 /* Final_Peg_51_Poster_print_tiff.tif in Resources */ = {isa = PBXBuildFile; fileRef = 17D6B2651DE71E560090A802 /* Final_Peg_51_Poster_print_tiff.tif */; };
 		17D6B2741DE71E560090A802 /* grand_tour.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 17D6B2661DE71E560090A802 /* grand_tour.pdf */; };
-		17D6B2751DE71E560090A802 /* HD_40307g_39x27.tif in Resources */ = {isa = PBXBuildFile; fileRef = 17D6B2671DE71E560090A802 /* HD_40307g_39x27.tif */; };
 		17D6B2761DE71E560090A802 /* jupiter.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 17D6B2681DE71E560090A802 /* jupiter.pdf */; };
-		17D6B2771DE71E560090A802 /* Kepler_16b_39x27.tif in Resources */ = {isa = PBXBuildFile; fileRef = 17D6B2691DE71E560090A802 /* Kepler_16b_39x27.tif */; };
-		17D6B2781DE71E560090A802 /* Kepler_186f_39x27.tif in Resources */ = {isa = PBXBuildFile; fileRef = 17D6B26A1DE71E560090A802 /* Kepler_186f_39x27.tif */; };
 		17D6B2791DE71E560090A802 /* mars.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 17D6B26B1DE71E560090A802 /* mars.pdf */; };
-		17D6B27A1DE71E560090A802 /* PSOJ318.5-22_print.tif in Resources */ = {isa = PBXBuildFile; fileRef = 17D6B26C1DE71E560090A802 /* PSOJ318.5-22_print.tif */; };
 		17D6B27B1DE71E560090A802 /* titan.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 17D6B26D1DE71E560090A802 /* titan.pdf */; };
 		17D6B27C1DE71E560090A802 /* venus.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 17D6B26E1DE71E560090A802 /* venus.pdf */; };
 		17D6B27E1DE721E40090A802 /* SourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6B27D1DE721E40090A802 /* SourceViewController.swift */; };
@@ -30,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17790BD21DEBB51100C45D45 /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 		17850DA71DE71CD1000E458A /* Project1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17850DAA1DE71CD1000E458A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17850DAC1DE71CD1000E458A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,14 +37,9 @@
 		17D6B2621DE71E560090A802 /* earth.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = earth.pdf; sourceTree = "<group>"; };
 		17D6B2631DE71E560090A802 /* enceladus.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = enceladus.pdf; sourceTree = "<group>"; };
 		17D6B2641DE71E560090A802 /* europa.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = europa.pdf; sourceTree = "<group>"; };
-		17D6B2651DE71E560090A802 /* Final_Peg_51_Poster_print_tiff.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Final_Peg_51_Poster_print_tiff.tif; sourceTree = "<group>"; };
 		17D6B2661DE71E560090A802 /* grand_tour.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = grand_tour.pdf; sourceTree = "<group>"; };
-		17D6B2671DE71E560090A802 /* HD_40307g_39x27.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = HD_40307g_39x27.tif; sourceTree = "<group>"; };
 		17D6B2681DE71E560090A802 /* jupiter.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = jupiter.pdf; sourceTree = "<group>"; };
-		17D6B2691DE71E560090A802 /* Kepler_16b_39x27.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Kepler_16b_39x27.tif; sourceTree = "<group>"; };
-		17D6B26A1DE71E560090A802 /* Kepler_186f_39x27.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Kepler_186f_39x27.tif; sourceTree = "<group>"; };
 		17D6B26B1DE71E560090A802 /* mars.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = mars.pdf; sourceTree = "<group>"; };
-		17D6B26C1DE71E560090A802 /* PSOJ318.5-22_print.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "PSOJ318.5-22_print.tif"; sourceTree = "<group>"; };
 		17D6B26D1DE71E560090A802 /* titan.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = titan.pdf; sourceTree = "<group>"; };
 		17D6B26E1DE71E560090A802 /* venus.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = venus.pdf; sourceTree = "<group>"; };
 		17D6B27D1DE721E40090A802 /* SourceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +78,7 @@
 			children = (
 				17850DAA1DE71CD1000E458A /* AppDelegate.swift */,
 				17850DAC1DE71CD1000E458A /* ViewController.swift */,
+				17790BD21DEBB51100C45D45 /* WindowController.swift */,
 				17850DAE1DE71CD1000E458A /* Assets.xcassets */,
 				17850DB01DE71CD2000E458A /* Main.storyboard */,
 				17D6B27D1DE721E40090A802 /* SourceViewController.swift */,
@@ -103,14 +96,9 @@
 				17D6B2621DE71E560090A802 /* earth.pdf */,
 				17D6B2631DE71E560090A802 /* enceladus.pdf */,
 				17D6B2641DE71E560090A802 /* europa.pdf */,
-				17D6B2651DE71E560090A802 /* Final_Peg_51_Poster_print_tiff.tif */,
 				17D6B2661DE71E560090A802 /* grand_tour.pdf */,
-				17D6B2671DE71E560090A802 /* HD_40307g_39x27.tif */,
 				17D6B2681DE71E560090A802 /* jupiter.pdf */,
-				17D6B2691DE71E560090A802 /* Kepler_16b_39x27.tif */,
-				17D6B26A1DE71E560090A802 /* Kepler_186f_39x27.tif */,
 				17D6B26B1DE71E560090A802 /* mars.pdf */,
-				17D6B26C1DE71E560090A802 /* PSOJ318.5-22_print.tif */,
 				17D6B26D1DE71E560090A802 /* titan.pdf */,
 				17D6B26E1DE71E560090A802 /* venus.pdf */,
 			);
@@ -177,21 +165,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				17D6B26F1DE71E560090A802 /* ceres.pdf in Resources */,
-				17D6B27A1DE71E560090A802 /* PSOJ318.5-22_print.tif in Resources */,
 				17D6B27C1DE71E560090A802 /* venus.pdf in Resources */,
 				17D6B2701DE71E560090A802 /* earth.pdf in Resources */,
 				17D6B2721DE71E560090A802 /* europa.pdf in Resources */,
 				17D6B2741DE71E560090A802 /* grand_tour.pdf in Resources */,
 				17D6B2791DE71E560090A802 /* mars.pdf in Resources */,
 				17D6B2761DE71E560090A802 /* jupiter.pdf in Resources */,
-				17D6B2781DE71E560090A802 /* Kepler_186f_39x27.tif in Resources */,
 				17D6B27B1DE71E560090A802 /* titan.pdf in Resources */,
-				17D6B2771DE71E560090A802 /* Kepler_16b_39x27.tif in Resources */,
 				17850DAF1DE71CD1000E458A /* Assets.xcassets in Resources */,
-				17D6B2731DE71E560090A802 /* Final_Peg_51_Poster_print_tiff.tif in Resources */,
 				17D6B2711DE71E560090A802 /* enceladus.pdf in Resources */,
 				17850DB21DE71CD2000E458A /* Main.storyboard in Resources */,
-				17D6B2751DE71E560090A802 /* HD_40307g_39x27.tif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17850DAD1DE71CD1000E458A /* ViewController.swift in Sources */,
+				17790BD31DEBB51100C45D45 /* WindowController.swift in Sources */,
 				17850DAB1DE71CD1000E458A /* AppDelegate.swift in Sources */,
 				17D6B27E1DE721E40090A802 /* SourceViewController.swift in Sources */,
 				17D6B2801DE7222F0090A802 /* DetailViewController.swift in Sources */,

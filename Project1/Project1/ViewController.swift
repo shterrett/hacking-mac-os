@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class ViewController: NSViewController {
+class ViewController: NSSplitViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +22,11 @@ class ViewController: NSViewController {
         }
     }
 
-
+    @IBAction func shareClicked(_ sender: NSView) {
+        guard let detail = childViewControllers[1] as? DetailViewController else { return }
+        guard let image = detail.imageView.image else { return }
+        let sharingService = NSSharingServicePicker(items: [image])
+        sharingService.show(relativeTo: .zero, of: sender, preferredEdge: .minY)
+    }
 }
 
