@@ -15,6 +15,7 @@ class ViewController: NSViewController, WKNavigationDelegate, NSGestureRecognize
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         rows = NSStackView()
         rows.orientation = .vertical
         rows.distribution = .fillEqually
@@ -59,7 +60,7 @@ class ViewController: NSViewController, WKNavigationDelegate, NSGestureRecognize
     @IBAction func adjustRows(_ sender: NSSegmentedControl) {
         if add(sender) {
             let columnCount = (rows.arrangedSubviews.first as! NSStackView).arrangedSubviews.count
-            let viewArray = [NSView](repeating: makeWebView(), count: columnCount)
+            let viewArray: [NSView] = (1...columnCount).map() { _ in makeWebView() }
             let newRow = NSStackView(views: viewArray)
             newRow.distribution = .fillEqually
             rows.addArrangedSubview(newRow)
