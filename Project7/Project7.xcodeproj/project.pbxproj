@@ -13,6 +13,7 @@
 		1736CEF91DF35A8300231E27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1736CEF71DF35A8300231E27 /* Main.storyboard */; };
 		1736CF041DF35CDB00231E27 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736CF021DF35CDB00231E27 /* Photo.swift */; };
 		1736CF051DF35CDB00231E27 /* Photo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1736CF031DF35CDB00231E27 /* Photo.xib */; };
+		1736CF071DFADDB000231E27 /* black.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 1736CF061DFADDB000231E27 /* black.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1736CEFA1DF35A8300231E27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1736CF021DF35CDB00231E27 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		1736CF031DF35CDB00231E27 /* Photo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Photo.xib; sourceTree = "<group>"; };
+		1736CF061DFADDB000231E27 /* black.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = black.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		1736CEF01DF35A8300231E27 /* Project7 */ = {
 			isa = PBXGroup;
 			children = (
+				1736CF061DFADDB000231E27 /* black.mp4 */,
 				1736CF021DF35CDB00231E27 /* Photo.swift */,
 				1736CF031DF35CDB00231E27 /* Photo.xib */,
 				1736CEF11DF35A8300231E27 /* AppDelegate.swift */,
@@ -127,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1736CF051DF35CDB00231E27 /* Photo.xib in Resources */,
+				1736CF071DFADDB000231E27 /* black.mp4 in Resources */,
 				1736CEF61DF35A8300231E27 /* Assets.xcassets in Resources */,
 				1736CEF91DF35A8300231E27 /* Main.storyboard in Resources */,
 			);
@@ -294,6 +298,7 @@
 				1736CEFF1DF35A8300231E27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
