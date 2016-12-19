@@ -1,0 +1,18 @@
+PODS:
+  - Argo (4.1.1):
+    - Runes (>= 4.0.0)
+  - Curry (3.0.0)
+  - Runes (4.0.1)
+
+DEPENDENCIES:
+  - Argo
+  - Curry
+
+SPEC CHECKSUMS:
+  Argo: 014ac072f97462bc1a9b83d302edb351488a532f
+  Curry: eb3d2c75aec678b3cc7fb2729d2ad6dd121531d1
+  Runes: ff20f163b478ac2c0e18158d6086fd5b1997f983
+
+PODFILE CHECKSUM: 594cd2e8a40278b18d4159e9b9081196939ed6a9
+
+COCOAPODS: 1.1.1

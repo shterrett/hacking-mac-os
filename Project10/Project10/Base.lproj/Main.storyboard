@@ -710,10 +710,10 @@
                                             <menuItem isSeparatorItem="YES" id="ET8-nX-suq"/>
                                             <menuItem title="Show summary text" id="qAV-ya-jg3"/>
                                             <menuItem title="Show current temperature" tag="1" id="iSC-Mh-EGS"/>
-                                            <menuItem title="Show chance of rain" id="bhm-ub-FaS">
+                                            <menuItem title="Show chance of rain" tag="2" id="bhm-ub-FaS">
                                                 <modifierMask key="keyEquivalentModifierMask"/>
                                             </menuItem>
-                                            <menuItem title="Item" id="NZ2-x7-47k">
+                                            <menuItem title="Show Cloud Cover" tag="3" id="Zuh-kD-e3o">
                                                 <modifierMask key="keyEquivalentModifierMask"/>
                                             </menuItem>
                                         </items>
