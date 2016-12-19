@@ -15,11 +15,16 @@ struct Forecast {
     let latitude: Double
     let longitude: Double
     let timezone: String
-    let currentTime: Int
+    let current: Weather
+    let hourly: [Weather]
+}
+
+struct Weather {
+    let time: Date
     let summary: String
     let icon: String
-    let nearestStormDistance: Float
-    let nearestStormBearing: Float
+    let nearestStormDistance: Float?
+    let nearestStormBearing: Float?
     let precipIntensity: Float
     let precipProbability: Float
     let temperature: Float
@@ -32,16 +37,28 @@ extension Forecast: Decodable {
             <^> j <| "latitude"
             <*> j <| "longitude"
             <*> j <| "timezone"
-            <*> j <| ["currently", "time"]
-            <*> j <| ["currently", "summary"]
-            <*> j <| ["currently", "icon"]
-            <*> j <| ["currently", "nearestStormDistance"]
-            <*> j <| ["currently", "nearestStormBearing"]
-            <*> j <| ["currently", "precipIntensity"]
-            <*> j <| ["currently", "precipProbability"]
-            <*> j <| ["currently", "temperature"]
-            <*> j <| ["currently", "cloudCover"]
+            <*> j <| "currently"
+            <*> j <|| ["hourly", "data"]
     }
+}
+
+extension Weather: Decodable {
+    public static func decode(_ j: JSON) -> Decoded<Weather> {
+        return curry(Weather.init)
+            <^> (j <| "time" >>- parseDate)
+            <*> j <| "summary"
+            <*> j <| "icon"
+            <*> j <|? "nearestStormDistance"
+            <*> j <|? "nearestStormBearing"
+            <*> j <| "precipIntensity"
+            <*> j <| "precipProbability"
+            <*> j <| "temperature"
+            <*> j <| "cloudCover"
+    }
+}
+
+func parseDate(epoch: Int) -> Decoded<Date> {
+    return .fromOptional(Date(timeIntervalSince1970: TimeInterval(epoch)))
 }
 
 @NSApplicationMain
@@ -80,13 +97,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         if let forecast = currentForecast {
             switch mode {
             case 0:
-                return forecast.summary
+                return forecast.current.summary
             case 1:
-                return "\(forecast.temperature)°"
+                return "\(forecast.current.temperature)°"
             case 2:
-                return "Rain: \(forecast.precipProbability * 100)%"
+                return "Rain: \(forecast.current.precipProbability * 100)%"
             case 3:
-                return "Cloud: \(forecast.cloudCover * 100)%"
+                return "Cloud: \(forecast.current.cloudCover * 100)%"
             default:
                 return nil
             }
@@ -137,6 +154,29 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         popoverView.show(relativeTo: statusItem.button!.bounds, of: statusItem.button!, preferredEdge: .maxY)
     }
 
+    func refreshSubmenuItems() {
+        statusItem.menu?.removeAllItems()
+
+        let formatter = DateFormatter()
+        formatter.timeStyle = .short
+
+        if let forecast = currentForecast {
+            Array(forecast.hourly.prefix(10)).map() { weather in
+                let formattedDate = formatter.string(from: weather.time)
+
+                return NSMenuItem(title: "\(formattedDate): \(weather.summary); \(weather.temperature)°",
+                    action: nil, keyEquivalent: "")
+            }.forEach() {
+                statusItem.menu?.addItem($0)
+            }
+
+            let separator = NSMenuItem.separator()
+            statusItem.menu?.addItem(separator)
+        }
+
+        addConfigurationMenuItem()
+    }
+
     func fetchFeed() {
         let defaults = UserDefaults.standard
         guard let apiKey = defaults.string(forKey: "apiKey") else { return }
@@ -165,8 +205,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             let json: Any? = try? JSONSerialization.jsonObject(with: data, options: [])
             if let j: Any = json {
                 DispatchQueue.main.async() { [unowned self] in
-                    self.currentForecast = decode(j)
+                    let forecast: Forecast? = decode(j)
+                    self.currentForecast = forecast
                     self.updateDisplay()
+                    self.refreshSubmenuItems()
                 }
             }
         }
