@@ -27,6 +27,12 @@ class ViewController: NSViewController, NSTextViewDelegate {
 
     var screenshotImage: NSImage?
 
+    var document: Document {
+        let oughtToBeDocument = view.window?.windowController?.document as? Document
+        assert(oughtToBeDocument != nil, "Unable to find document")
+        return oughtToBeDocument!
+    }
+
     override func viewWillAppear() {
         super.viewWillAppear()
         generatePreview()
@@ -189,38 +195,47 @@ class ViewController: NSViewController, NSTextViewDelegate {
     }
 
     @IBAction func changeFontSize(_ sender: NSMenuItem) {
+        updateDocument()
         generatePreview()
     }
 
     @IBAction func changeFontColor(_ sender: NSColorWell) {
+        updateDocument()
         generatePreview()
     }
 
     @IBAction func changeBackgroundImage(_ sender: NSMenuItem) {
+        updateDocument()
         generatePreview()
     }
 
     @IBAction func changeBackgroundColorStart(_ sender: NSColorWell) {
+        updateDocument()
         generatePreview()
     }
 
     @IBAction func changeBackgroundColorEnd(_ sender: NSColorWell) {
+        updateDocument()
         generatePreview()
     }
 
     @IBAction func changeDropShadowStrength(_ sender: NSSegmentedControl) {
+        updateDocument()
         generatePreview()
     }
 
     @IBAction func changeDropShadowTarget(_ sender: NSSegmentedControl) {
+        updateDocument()
         generatePreview()
     }
 
     func changeFontName(_ sender: NSMenuItem) {
+        updateDocument()
         generatePreview()
     }
 
     func textDidChange(_ notification: Notification) {
+        updateDocument()
         generatePreview()
     }
 
@@ -276,5 +291,40 @@ class ViewController: NSViewController, NSTextViewDelegate {
             item.target = self
             backgroundImage.menu?.addItem(item)
         }
+    }
+
+    func updateDocument() {
+        document.screenshot.caption = caption.string ?? ""
+        document.screenshot.captionFontName = fontName.titleOfSelectedItem ?? ""
+        document.screenshot.captionFontSize = fontSize.tag
+        document.screenshot.captionColor = fontColor.color
+
+        if backgroundImage.selectedTag() == 999 {
+            document.screenshot.backgroundImage = ""
+        } else {
+            document.screenshot.backgroundImage = backgroundImage.titleOfSelectedItem ?? ""
+        }
+        document.screenshot.backgroundColorStart = backgroundColorStart.color
+        document.screenshot.backgroundColorEnd = backgroundColorEnd.color
+
+        document.screenshot.dropShadowTarget = dropShadowTarget.selectedSegment
+        document.screenshot.dropShadowStrength = dropShadowStrength.selectedSegment
+    }
+
+    func updateUIFromDocument() {
+        caption.string = document.screenshot.caption
+        fontName.selectItem(withTitle: document.screenshot.captionFontName)
+        fontSize.selectItem(withTag: document.screenshot.captionFontSize)
+        fontColor.color = document.screenshot.captionColor
+
+        if !document.screenshot.backgroundImage.isEmpty {
+            backgroundImage.selectItem(withTitle: document.screenshot.backgroundImage)
+        }
+
+        backgroundColorStart.color = document.screenshot.backgroundColorStart
+        backgroundColorEnd.color = document.screenshot.backgroundColorEnd
+
+        dropShadowTarget.selectSegment(withTag: document.screenshot.dropShadowTarget)
+        dropShadowStrength.selectSegment(withTag: document.screenshot.dropShadowStrength)
     }
 }

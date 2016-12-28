@@ -13,6 +13,7 @@
 		175D8BD51E0E9C00002049B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 175D8BD41E0E9C00002049B9 /* Assets.xcassets */; };
 		175D8BD81E0E9C01002049B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 175D8BD61E0E9C01002049B9 /* Main.storyboard */; };
 		175D8BE01E0F2190002049B9 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 175D8BDF1E0F2190002049B9 /* fonts */; };
+		1776CAE81E13CAD40041E63D /* Screenshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1776CAE71E13CAD40041E63D /* Screenshot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		175D8BD71E0E9C01002049B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		175D8BD91E0E9C01002049B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		175D8BDF1E0F2190002049B9 /* fonts */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fonts; sourceTree = "<group>"; };
+		1776CAE71E13CAD40041E63D /* Screenshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Screenshot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		175D8BCD1E0E9C00002049B9 /* Project13 */ = {
 			isa = PBXGroup;
 			children = (
+				1776CAE71E13CAD40041E63D /* Screenshot.swift */,
 				175D8BCE1E0E9C00002049B9 /* AppDelegate.swift */,
 				175D8BD01E0E9C00002049B9 /* ViewController.swift */,
 				175D8BD21E0E9C00002049B9 /* Document.swift */,
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				175D8BD11E0E9C00002049B9 /* ViewController.swift in Sources */,
+				1776CAE81E13CAD40041E63D /* Screenshot.swift in Sources */,
 				175D8BCF1E0E9C00002049B9 /* AppDelegate.swift in Sources */,
 				175D8BD31E0E9C00002049B9 /* Document.swift in Sources */,
 			);
@@ -294,6 +298,7 @@
 				175D8BDE1E0E9C01002049B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
